@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Order-Contact</title>
+    <link href="eCommerceAssets/styles/eCommerceStyle4.css" rel="stylesheet" type="text/css">
+    <link href="eCommerceAssets/styles/skeleton.css" rel="stylesheet" type="text/css">
+    <style>
+        .OrderForm {
+            background-image: url("eCommerceAssets/images/logo.jpg");
+            background-size: 70%;
+            border-style: solid;
+            background-position: 40vmin;
+            background-repeat: space;
+        }
+        
+        .ContactForm {
+            background-image: url("eCommerceAssets/images/logo.jpg");
+            background-size: 70%;
+            border-style: solid;
+            background-position: -27vmin;
+            background-repeat: space;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- This is the header content. It contains Logo and links -->
+        <div id="logo"> <img src="eCommerceAssets/images/logo.jpg" alt="sample logo" width="100px">
+            <!-- Company Logo text -->
+        </div>
+        <div id="headerLinks">
+            <a href="Home.html" title="About">Home</a>
+            <a href="FAQ.html" title="FAQ">FAQs</a>
+            <a href="Order-Contact.html" title="Order">Order/Contacts</a>
+            <div class="dropdown">
+                <article class="dropbtn"><a href="Products.html" title="Products">Products</a></article>
+                <div class="dropdown-content">
+                    <a href="Tees.html">T-Shirts and Poloshirts</a>
+                    <a href="Jackets-Longsleeves.html">Jackets and Longsleeves</a>
+                    <a href="Headwear.html">Headwear</a>
+                    <h2>Miscellaneous Brands</h2>
+                    <a href="OffW.html">Off-White</a>
+                    <a href="RL.html">Ralph Lauren</a>
+                    <a href="Nike.html">Nike</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="mainWrapper">
+        <form method="post" action="mailto:narridocydandrei@gmail.com" autocomplete="on" class="OrderForm">
+
+            <h1 class="OrderFC">Order Form</h1>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="naf">
+                <p class="contactCon">Name: <input type="text" id="pangalan" size="15" maxlength="20"></p>
+                <br />
+                <br />
+                <p class="contactCon">Instagram/Facebook ID: <input type="text" id="pangalan" size="15" maxlength="20"></p>
+                <br />
+                <br />
+                <p class="contactCon">Email: <input type="text" id="item" size="20" maxlength="35"></p>
+                <br />
+                <br />
+                <p class="contactCon">Item name/: <input type="text" id="item" size="6" maxlength="15"></p>
+                <br />
+                <p class="contactCon">Full Address:</p>
+
+                <textarea rows="7" cols="50" id="suggest">  </textarea>
+                <br />
+                <br />
+                <div class="button1">
+                    <input type="Submit" value="Submit"></div>
+                <div class="button2">
+                    <input type="Reset" value="Reset"></div>
+            </div>
+        </form>
+        <form method="post" action="mailto:madridjiro@gmail.com" autocomplete="on" class="ContactForm">
+            <h1 class="OrderFC">Contact Us</h1>
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="naf">
+                <p class="contactCon">Name: <input type="text" id="pangalan" size="15" maxlength="20"></p>
+                <br />
+                <br />
+                <p class="contactCon">Age: <input type="text" id="pangalan" size="1" maxlength="3"></p>
+                <br />
+                <br />
+                <p class="contactCon">Sex: <input type="radio" id="gender" value="lalake">Male
+                    <input type="radio" id="gender" value="babae">Female
+                    <input type="radio" id="gender" value="prefer not to">Prefer not to tell</p>
+                <br />
+                <p class="contactCon">Reason for contact:</p>
+                <input list="reason">
+                <datalist id="reason">
+                        <option value="I want more images!">
+                        <option value="There's a bug in the website!">
+                        <option value="Order malfunction...">
+                        <option value="Wrong Address...">
+                        <option value="Suggestion">
+                        <option value="Others">
+                      </datalist>
+                <br />
+                <br />
+
+                <br />
+                <br />
+                <p class="contactCon">Have anything in your mind? Comment here:
+                    <br />
+                    <br />
+                    <textarea rows="12" cols="55" id="suggest">  </textarea></p>
+                <br />
+                <br />
+                <div class="button3">
+                    <input type="Submit" value="Submit"></div>
+                <div class="button4">
+                    <input type="Reset" value="Reset"></div>
+                <br />
+                <br />
+            </div>
+        </form>
+        <br />
+        <br />
+        <br />
+        <div style="clear:both">
+        </div>
+        <footer>
+            <div class="footerlinks">
+                <a href="https://www.facebook.com/thrifthroat" title="Link"><img src="eCommerceAssets/images/fbicon.png" width="30px"></a>
+            </div>
+            <div class="footerlinks">
+                <a href="https://www.instagram.com/thrifthroat_ph/" title="Link"><img src="eCommerceAssets/images/igicon.png" width="30px"></a>
+            </div>
+            <br />
+            <br />
+        </footer>
+        <div style="clear:both" id="foot">
+            All rights reserved to the owner of the brand, Joaquin dela Cueva, Cyd Narrido, Ralph Alviar, Earl John Daniel and the creator of the website Lorenz Jiro L. Madrid.
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+
+</html>

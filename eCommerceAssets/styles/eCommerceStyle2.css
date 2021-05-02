@@ -1,0 +1,462 @@
+@charset "utf-8";
+
+/* Global Styles */
+
+.dropbtn {
+    background-color: #ffffff;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+
+.dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-align: 10px;
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content h2 {
+    text-align: center;
+    opacity: 60%;
+    color: #FFFFFF;
+    font-size: 25px;
+    display: block;
+    background-color: #252525;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #8f8f8f;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+.SOLD .price {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    opacity: 40%;
+}
+
+
+/* <!--pagination--> */
+
+.pagination {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 45.5%;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #e09027;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.gradient {
+    background-image: linear-gradient(200deg, rgb(255, 0, 0), rgb(236, 207, 152));
+}
+
+a:hover {
+    color: rgba(184, 165, 132, 1.00);
+}
+
+
+/*header*/
+
+#logo {
+    float: left;
+    text-align: center;
+    color: rgba(255, 255, 255, 1.00);
+    padding-left: 10px;
+    padding-top: 13px;
+    margin-top: -180px;
+    margin-left: 18px;
+}
+
+
+/* div for Links in header */
+
+#headerLinks {
+    float: right;
+    width: 600px;
+    margin-top: -160px;
+    margin-right: 25px;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Links in header */
+
+#headerLinks a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-left: 50px;
+    font-size: 17px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Main content of the site */
+
+#content {
+    clear: both;
+    overflow: auto;
+    padding-top: 29px;
+}
+
+
+/* Sidebar */
+
+
+/* main content of the site */
+
+#content .mainContent {
+    float: left;
+    width: 70%;
+    text-align: center;
+    padding-left: 4%;
+}
+
+
+/*menubar's properties for menus in sidebar */
+
+#content .sidebar #menubar {
+    text-align: left;
+    color: rgba(146, 146, 146, 1.00);
+    position: relative;
+    left: 0%;
+}
+
+.slight {
+    margin-top: 120px;
+}
+
+
+/* Whole page content */
+
+#mainWrapper {
+    width: 95%;
+    padding-left: 5%;
+    margin-top: 200px;
+}
+
+
+/*menu elements */
+
+.menu ul li {
+    list-style-type: none;
+    font-size: x-large;
+    position: relative;
+    left: -35px;
+    padding-top: 12px;
+}
+
+
+/* Product rows for catalog */
+
+#content .mainContent .productRow {
+    overflow: auto;
+    color: rgba(146, 146, 146, 1.00);
+}
+
+
+/* Each product Information in the catalog */
+
+.mainContent .productRow .productInfo {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 15%;
+}
+
+
+/* Prices of a products in catalog */
+
+.productRow .productInfo .price {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(32, 42, 42, 1.00);
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}
+
+
+/* Content holder for products in catalog*/
+
+.productRow .productInfo .productContent {
+    position: relative;
+    top: -37px;
+    font-size: 14px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(66, 98, 98, 1.00);
+    white-space: pre-wrap;
+}
+
+
+/* Buy button for products in catalog */
+
+.productRow .productInfo .buyButton {
+    position: relative;
+    top: -48px;
+    width: 84%;
+    background-color: rgba(236, 82, 82, 1.00);
+    height: 35px;
+    color: rgba(255, 255, 255, 1.00);
+    border-style: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+/* footer */
+
+#mainWrapper footer {
+    clear: both;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    padding-top: 22px;
+    padding-left: 22px;
+    text-align: center;
+    margin-left: 22%;
+    padding-bottom: 22px;
+    padding-right: 30px;
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+
+/*Each footer content */
+
+#mainWrapper footer div {
+    width: 90%;
+    padding-left: 4%;
+    padding-right: 2%;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Links in footer */
+
+footer div a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    margin-top: -15px;
+    float: left;
+    margin-left: 30%;
+}
+
+
+/* Product's images in catalog */
+
+.productInfo div img {
+    width: 100%;
+}
+
+
+/* Container for links in footer */
+
+footer .footerlinks {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1.00);
+}
+
+
+/* Media query for tablets */
+
+@media screen and (max-width:700px) {
+    /* Logo placeholder*/
+    #mainWrapper header #logo {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    #content {
+        position: relative;
+        top: -22px;
+        width: 100%;
+        overflow: hidden;
+    }
+    /*menu headings in sidebar */
+    /* main content region of page */
+    #mainWrapper #content .mainContent {
+        overflow: hidden;
+        width: 95%;
+        margin-top: 40px;
+    }
+    /* Prices of products in catalog view */
+    .productRow .productInfo .price {
+        font-size: 19px;
+    }
+    /* Content holders in catalog view */
+    .productRow .productInfo .productContent {
+        font-size: 16px;
+    }
+    /* Buy buttons in catalog view */
+    .productRow .productInfo .buyButton {
+        font-size: 15px;
+    }
+    /* Container for links in footer */
+    #mainWrapper footer .footerlinks {
+        float: right;
+        width: 100%;
+        top: 17px;
+        clear: both;
+        text-align: center;
+        left: 0%;
+        padding-bottom: 25px;
+    }
+    /* Container for each footer divisions */
+    #mainWrapper footer {
+        width: 90%;
+        text-align: justify;
+        font-size: 15px;
+        padding-left: 16px;
+        overflow: hidden;
+    }
+    /* Links in footer */
+    .footerlinks p a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: none;
+        padding-right: 35px;
+    }
+    /* Footer region */
+    /* Links in header */
+    header #headerLinks a {
+        padding-left: -10px;
+        padding-right: 10px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 50px;
+    }
+    /* Paragraphs in footer */
+    footer p {
+        display: none;
+    }
+}
+
+
+/*media query for small screen devices */
+
+@media screen and (max-width:480px) {
+    /*Container for links in header */
+    #mainWrapper header #headerLinks {
+        width: 100%;
+        text-align: center;
+        background-color: rgb(241, 42, 42);
+        padding-bottom: 21px;
+    }
+    /* Logo placeholder*/
+    #mainWrapper header #logo {
+        width: 100%;
+        text-align: center;
+    }
+    /* Links in header */
+    header #headerLinks a {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+    /*Offer - Text Banner */
+    #mainWrapper #offer {
+        padding-left: 0px;
+        text-align: center;
+    }
+    /* Menubar in sidebar */
+    #content .sidebar #menubar {
+        position: relative;
+        left: -8%;
+        text-align: center;
+    }
+    /*Menu headings in sidebar */
+    #menubar .menu h2 {
+        width: 100%;
+        display: block;
+    }
+    /* Each product in catalog view */
+    .mainContent .productRow .productInfo {
+        width: 100%;
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+        left: -2%;
+    }
+    #mainWrapper footer div {
+        width: 100%;
+        margin-left: -16px;
+        text-align: justify;
+        padding-bottom: 16px;
+        overflow: auto;
+    }
+    /* Unordered list for menu elements */
+    .menu ul {
+        position: relative;
+        padding-left: 24%;
+    }
+    /* Container for links in footer */
+    #mainWrapper footer .footerlinks {
+        padding-left: 8%;
+    }
+    /* Main content which excludes the sidebar */
+    #mainwrapper #content .mainContent {
+        margin-top: -81px;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+.allP {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 45px;
+    margin-left: 38%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+    opacity: 70%;
+}

@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+/* Global Styles */
+
+.dropbtn {
+    background-color: #ffffff;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+
+.dropdown-content h2 {
+    display: block;
+    background-color: #ffffff;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #8f8f8f;
+}
+
+a:visited {
+    color: red;
+}
+
+
+/*header*/
+
+#logo {
+    float: left;
+    text-align: center;
+    color: rgba(141, 204, 204, 1.00);
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 75px;
+    margin-top: 35px;
+}
+
+
+/* div for Links in header */
+
+#headerLinks {
+    float: right;
+    width: 100px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20%;
+    line-height: 50px;
+}
+
+
+/* Links in header */
+
+#headerLinks a {
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Main content of the site */
+
+#content {
+    clear: both;
+    overflow: auto;
+    padding-top: 29px;
+}
+
+
+/* main content of the site */
+
+#content .mainContent {
+    float: left;
+    width: 70%;
+    text-align: center;
+    padding-left: 4%;
+}
+
+#mainWrapper footer {
+    clear: both;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 1.00);
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.5;
+    padding-top: 5px;
+    padding-left: 350px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-bottom: -8px;
+}
+
+
+/*Each footer content */
+
+#mainWrapper footer div {
+    width: 25%;
+    float: left;
+    padding-left: 4%;
+    padding-right: 2%;
+    text-align: justify;
+}
+
+
+/* Links in footer */
+
+footer div a {
+    color: rgba(0, 0, 0, 1.00);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: -15px;
+    float: left;
+}
+
+
+/* Product's images in catalog */
+
+.productInfo div img {
+    width: 100%;
+}
+
+.sidebar #menubar .menu ul li {
+    color: rgba(107, 97, 97, 1.00);
+    text-decoration: none;
+}
+
+
+/* Menu headings in sidebar */
+
+#menubar .menu h2 {
+    font-size: 16px;
+}
+
+
+/*Links under menus in sidebar */
+
+#menubar .menu ul li a {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1.00);
+}
+
+
+/* Menus in sidebar */
+
+.sidebar #menubar .menu {
+    margin-bottom: 29px;
+}
+
+
+/* Container for links in footer */
+
+footer .footerlinks {
+    margin-top: 50px;
+}
+
+
+/* Media query for tablets */
+
+@media screen and (max-width:700px) {
+    /* sidebar */
+    #content .sidebar {
+        float: none;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        padding-left: 12%;
+        padding-top: 0px;
+    }
+    /* horizontal separators in sidebar */
+    #content .sidebar hr {
+        display: none;
+    }
+    /*The sidebar and maincontent of page */
+    #content {
+        position: relative;
+        top: -22px;
+        width: 100%;
+        overflow: hidden;
+    }
+    /*The link to be hidden in tablet view */
+    .sidebar #menubar .menu ul .notimp {
+        display: none;
+    }
+    /* menus in sidebar */
+    .sidebar #menubar .menu {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 16px;
+    }
+    /*menubar in sidebar */
+    #content .sidebar #menubar {
+        position: relative;
+        left: -7%;
+        overflow: hidden;
+        width: 95%;
+        padding-top: 0px;
+    }
+    /* main content region of page */
+    #mainWrapper #content .mainContent {
+        overflow: hidden;
+        width: 95%;
+        margin-top: 40px;
+    }
+    /* Prices of products in catalog view */
+    .productRow .productInfo .price {
+        font-size: 19px;
+    }
+    /* Content holders in catalog view */
+    .productRow .productInfo .productContent {
+        font-size: 16px;
+    }
+    /* Buy buttons in catalog view */
+    .productRow .productInfo .buyButton {
+        font-size: 15px;
+    }
+    /* Container for links in footer */
+    #mainWrapper footer .footerlinks {
+        float: none;
+        width: 100%;
+        position: relative;
+        top: 17px;
+        clear: both;
+        text-align: center;
+        left: 0%;
+        padding-bottom: 19px;
+        color: rgba(0, 0, 0, 1.00);
+    }
+    /* Container for each footer divisions */
+    #mainWrapper footer div {
+        width: 44%;
+        text-align: justify;
+        font-size: 15px;
+    }
+    /* Links in footer */
+    .footerlinks p a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: inline;
+        padding-right: 35px;
+        color: rgba(0, 0, 0, 1.00);
+    }
+    /* Footer region */
+    #mainWrapper footer {
+        padding-left: 16px;
+        overflow: hidden;
+    }
+    /* Links in header */
+    header #headerLinks a {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    /* Paragraphs in footer */
+    footer .footerlinks p {
+        display: contents;
+    }
+}
+
+
+/*media query for small screen devices */
+
+@media screen and (max-width:480px) {
+    /*Container for links in header */
+    #mainWrapper header #headerLinks {
+        width: 100%;
+        text-align: center;
+        background-color: rgba(190, 190, 190, 1.00);
+        padding-bottom: 21px;
+    }
+    /* Logo placeholder*/
+    #mainWrapper header #logo {
+        width: 100%;
+        text-align: center;
+    }
+    /* Links in header */
+    header #headerLinks a {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+    /* Menubar in sidebar */
+    #content .sidebar #menubar {
+        position: relative;
+        left: -8%;
+        text-align: center;
+    }
+    /*Menu headings in sidebar */
+    #menubar .menu h2 {
+        width: 100%;
+        display: block;
+    }
+    /* Each product in catalog view */
+    .mainContent .productRow .productInfo {
+        width: 100%;
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+        left: -2%;
+    }
+    #mainWrapper footer div {
+        width: 100%;
+        margin-left: -16px;
+        text-align: justify;
+        padding-bottom: 16px;
+        overflow: auto;
+    }
+    /* Unordered list for menu elements */
+    .menu ul {
+        position: relative;
+        padding-left: 24%;
+    }
+    /* Container for links in footer */
+    #mainWrapper footer .footerlinks {
+        padding-left: 10%;
+        color: rgba(0, 0, 0, 1.00);
+    }
+    /* Main content which excludes the sidebar */
+    #mainwrapper #content .mainContent {
+        margin-top: -81px;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+/* Global Styles */
+
+a:hover {
+    opacity: 50%;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+
+.dropdown-content h2 {
+    text-align: center;
+    opacity: 60%;
+    color: #FFFFFF;
+    font-size: 25px;
+    display: block;
+    background-color: #252525;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #8f8f8f;
+}
+
+form {
+    margin-top: 200px;
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+}
+
+.naf {
+    text-align: left;
+    margin-left: 150px;
+    margin-top: -80px;
+}
+
+.OrderForm {
+    float: left;
+    padding-bottom: 36px;
+}
+
+.ContactForm {
+    float: left;
+    margin-left: 100px;
+    margin-top: 17px;
+}
+
+.OrderFC {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.contactCon {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    font-weight: 200;
+    line-height: .5;
+}
+
+.button1 {
+    margin-left: 40px;
+    width: 50px;
+    color: rgba(255, 255, 255, 1.00);
+    margin-top: 30px;
+}
+
+.button2 {
+    margin-left: 200px;
+    margin-top: -53px;
+}
+
+.button3 {
+    margin-left: 70px;
+    width: 50px;
+    height: 20px;
+    color: rgba(255, 255, 255, 1.00);
+}
+
+.button4 {
+    margin-left: 225px;
+    margin-top: -20px;
+}
+
+#foot {
+    margin-left: 170px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+    color: rgba(184, 165, 132, 1.00);
+}
+
+
+/*header*/
+
+#logo {
+    float: left;
+    text-align: center;
+    color: rgba(255, 255, 255, 1.00);
+    padding-left: 10px;
+    padding-top: -50px;
+    margin-top: 40px;
+    margin-left: 18px;
+}
+
+
+/* div for Links in header */
+
+#headerLinks {
+    float: right;
+    width: 770px;
+    margin-top: 50px;
+    margin-right: 175px;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Links in header */
+
+#headerLinks a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-left: 50px;
+    font-size: 17px;
+}
+
+
+/* Main content of the site */
+
+#content {
+    clear: both;
+    overflow: auto;
+    padding-top: 29px;
+}
+
+
+/* main content of the site */
+
+#content .mainContent {
+    width: 70%;
+    text-align: center;
+    padding-left: 4%;
+}
+
+
+/* Whole page content */
+
+#mainWrapper {
+    width: 80%;
+    padding-left: 10%;
+}
+
+
+/* Product rows for catalog */
+
+#content .mainContent .productRow {
+    overflow: auto;
+    color: rgba(146, 146, 146, 1.00);
+}
+
+
+/* Each product Information in the catalog */
+
+.mainContent .productRow .productInfo {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 22%;
+}
+
+
+/* Prices of a products in catalog */
+
+.productRow .productInfo .price {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(146, 146, 146, 1.00);
+    font-size: 22px;
+    position: relative;
+    top: -20px;
+}
+
+
+/* Content holder for products in catalog*/
+
+.productRow .productInfo .productContent {
+    position: relative;
+    top: -37px;
+    font-size: 14px;
+    font-family: source-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(22, 27, 27, 1.00);
+    white-space: pre-wrap;
+}
+
+
+/* Buy button for products in catalog */
+
+.productRow .productInfo .buyButton {
+    position: relative;
+    top: -48px;
+    width: 84%;
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+    color: rgba(255, 255, 255, 1.00);
+    border-style: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+
+/* footer */
+
+#mainWrapper footer {
+    clear: both;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.8;
+    padding-top: 22px;
+    padding-left: 10px;
+    padding-bottom: 22px;
+    padding-right: 22px;
+    border-radius: 20px;
+}
+
+
+/*Each footer content */
+
+#mainWrapper footer div {
+    width: 30%;
+    padding-left: 1%;
+    padding-right: 2%;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Links in footer */
+
+footer div a {
+    color: rgba(255, 255, 255, 1.00);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 80%;
+}
+
+
+/* Product's images in catalog */
+
+.productInfo div img {
+    width: 100%;
+}
+
+footer .footerlinks {
+    float: left;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1.00);
+    padding: 10px;
+}
+
+
+/* Medi2query for tablets */
+
+@media screen and (max-width:700px) {
+    .OrderForm {
+        width: 100%;
+        float: left;
+        padding-bottom: 36px;
+    }
+    .ContactForm {
+        clear: both;
+        width: 100%;
+        float: left;
+        margin-left: 100px;
+        margin-top: 82px;
+    }
+    #content .sidebar #search {
+        display: none;
+    }
+    /*The sidebar and maincontent of page */
+    #content {
+        position: relative;
+        top: -22px;
+        width: 100%;
+        overflow: hidden;
+    }
+    /*The link to be hidden in tablet view */
+    .sidebar #menubar .menu ul .notimp {
+        display: none;
+    }
+    /* main content region of page */
+    #mainWrapper #content .mainContent {
+        overflow: hidden;
+        width: 95%;
+        margin-top: 40px;
+    }
+    /* Prices of products in catalog view */
+    .productRow .productInfo .price {
+        font-size: 19px;
+    }
+    /* Content holders in catalog view */
+    .productRow .productInfo .productContent {
+        font-size: 16px;
+    }
+    /* Buy buttons in catalog view */
+    .productRow .productInfo .buyButton {
+        font-size: 15px;
+    }
+    /* Container for links in footer */
+    #mainWrapper footer .footerlinks {
+        width: 90%;
+        top: 17px;
+        clear: both;
+        text-align: center;
+        left: 0%;
+        padding-bottom: 19px;
+    }
+    /* Container for each footer divisions */
+    #mainWrapper footer div {
+        width: 44%;
+        font-size: 15px;
+    }
+    /* Links in footer */
+    .footerlinks p a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: inline;
+        padding-right: 0px;
+    }
+    /* Footer region */
+    #mainWrapper footer {
+        padding-left: 1px;
+        overflow: hidden;
+    }
+    /* Links in header */
+    header #headerLinks a {
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+    /* Paragraphs in footer */
+    #foot {
+        display: none;
+    }
+}
+
+
+/*media query for small screen devices */
+
+@media screen and (max-width:480px) {
+    .OrderForm {
+        width: 100%;
+        float: left;
+        padding-bottom: 36px;
+    }
+    .ContactForm {
+        clear: both;
+        width: 100%;
+        float: left;
+        margin-left: 100px;
+        margin-top: 82px;
+    }
+    /*Container for links in header */
+    #mainWrapper header #headerLinks {
+        width: 100%;
+        text-align: center;
+        background-color: rgba(190, 190, 190, 1.00);
+        padding-bottom: 21px;
+    }
+    /* Logo placeholder*/
+    #mainWrapper header #logo {
+        width: 100%;
+        text-align: center;
+    }
+    /* Links in header */
+    header #headerLinks a {
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+    /* Menubar in sidebar */
+    #content .sidebar #menubar {
+        position: relative;
+        left: -8%;
+        text-align: center;
+    }
+    /* Each product in catalog view */
+    .mainContent .productRow .productInfo {
+        width: 100%;
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+        left: -2%;
+    }
+    #mainWrapper footer div {
+        width: 100%;
+        margin-left: -16px;
+        text-align: justify;
+        padding-bottom: 16px;
+        overflow: auto;
+    }
+    /* Unordered list for menu elements */
+    .menu ul {
+        position: relative;
+        padding-left: 24%;
+    }
+    /* Container for links in footer */
+    #mainWrapper footer .footerlinks {
+        padding-left: 5%;
+    }
+    /* Main content which excludes the sidebar */
+    #mainwrapper #content .mainContent {
+        margin-top: -51px;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
