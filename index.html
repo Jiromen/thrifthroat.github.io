@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Thrifthroat</title>
+    <link href="eCommerceAssets/styles/eCommerceStyle5.css" rel="stylesheet" type="text/css">
+    <link href="eCommerceAssets/styles/imageslide.css" rel="stylesheet" type="text/css">
+    <!-- <link href="eCommerceAssets/styles/skeleton.css" rel="stylesheet" type="text/css"> -->
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- This is the header content. It contains Logo and links -->
+        <div id="logo"> <img src="eCommerceAssets/images/logo.jpg" alt="sample logo" width="100px">
+
+        </div>
+        <div id="headerLinks">
+            <a href="FAQ.html" title="FAQ">FAQs</a>
+            <a href="Order-Contact.html" title="Order">Order/Contacts</a>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="Products.html" title="Products">Products</a></button>
+                <div class="dropdown-content">
+                    <a href="Tees.html">T-Shirts and Poloshirts</a>
+                    <a href="Jackets-Longsleeves.html">Jackets and Longsleeves</a>
+                    <a href="Headwear.html">Headwear</a>
+                    <h3>Miscellaneous Brands</h3>
+                    <a href="OffW.html">Off-White</a>
+                    <a href="RL.html">Ralph Lauren</a>
+                    <a href="Nike.html">Nike</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div style="clear:both">
+        <br />
+        <br />
+        <br />
+        <div class="slider-container">
+            <span id="slider-image-1"></span>
+            <span id="slider-image-2"></span>
+            <span id="slider-image-3"></span>
+            <span id="slider-image-4"></span>
+
+            <div class="image-container">
+
+                <img src="eCommerceAssets/images/Picture1.jpg" class="slider-image" alt="black jacket">
+                <img src="eCommerceAssets/images/Picture2.jpg" class="slider-image" alt="black jacket">
+                <img src="eCommerceAssets/images/Picture3.jpg" class="slider-image" alt="black jacket">
+                <img src="eCommerceAssets/images/Picture4.jpg" class="slider-image" alt="black jacket">
+                <img src="eCommerceAssets/images/Picture5.jpg" class="slider-image" alt="black jacket">
+            </div>
+            <div class="button-container">
+                <a href="#slider-image-1" class="slider-button"></a>
+                <a href="#slider-image-2" class="slider-button"></a>
+                <a href="#slider-image-3" class="slider-button"></a>
+                <a href="#slider-image-4" class="slider-button"></a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="center">
+        <!--popup image 1-->
+        <!-- Trigger the Modal -->
+        <div class="gallery"><img id="myImg" src="eCommerceAssets/images/caps.jpg" alt="Caps" style="width:100%;max-width:300px;border-radius:30px;"></div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01" alt="PewNews Facemask">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption">PewNews Facemasks</div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+        <!--popup image 2-->
+
+        <!-- Trigger the Modal -->
+        <div class="gallery"><img id="myImg2" src="eCommerceAssets/images/pants.jpg" alt="Miscellaneous Pants" style="width:100%;max-width:300px;border-radius:30px;"></div>
+
+        <!-- The Modal -->
+        <div id="myModal2" class="modal2">
+
+            <!-- The Close Button -->
+            <span class="close2">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content2" id="img02">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption2"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal2");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg2");
+            var modalImg = document.getElementById("img02");
+            var captionText = document.getElementById("caption2");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close2")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+        <!--popup image 3-->
+
+        <!-- Trigger the Modal -->
+        <div class="gallery"><img id="myImg3" src="eCommerceAssets/images/shirts.jpg" alt="Miscellaneous Shirts" style="width:100%;max-width:300px; border-radius:30px;"></div>
+
+        <!-- The Modal -->
+        <div id="myModal3" class="modal3">
+
+            <!-- The Close Button -->
+            <span class="close3">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content3" id="img03">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption3"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal3");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg3");
+            var modalImg = document.getElementById("img03");
+            var captionText = document.getElementById("caption3");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close3")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+
+        <!--popup image 4-->
+
+        <!-- Trigger the Modal -->
+        <div class="gallery"><img id="myImg4" src="eCommerceAssets/images/shirts2.jpg" alt="Miscellaneous Shirts" style="width:100%;max-width:300px;border-radius:30px;"></div>
+
+        <!-- The Modal -->
+        <div id="myModal4" class="modal4">
+
+            <!-- The Close Button -->
+            <span class="close4">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content4" id="img04">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption4"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal4");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg4");
+            var modalImg = document.getElementById("img04");
+            var captionText = document.getElementById("caption4");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close4")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+
+        <!--popup image 5-->
+
+        <!-- Trigger the Modal -->
+        <div class="gallery"><img id="myImg5" src="eCommerceAssets/images/poloshirt.jpg" alt="Miscellaneous Shirts" style="width:100%;max-width:300px;border-radius:30px;"></div>
+
+        <!-- The Modal -->
+        <div id="myModal5" class="modal5">
+
+            <!-- The Close Button -->
+            <span class="close5">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content5" id="img05">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption5"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal5");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg5");
+            var modalImg = document.getElementById("img05");
+            var captionText = document.getElementById("caption5");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close5")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+    </div>
+    <div id="mainWrapper" style="clear:both"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    </div>
+
+
+    <footer>
+
+        <div class="footerlinks icons">
+            <a href="https://www.facebook.com/thrifthroat" title="Link"><img src="eCommerceAssets/images/fbicon.png" width="30px"></a>
+
+            <a class="icons" href="https://www.instagram.com/thrifthroat_ph/" title="Link"><img src="eCommerceAssets/images/igicon.png" width="30px"></a>
+        </div>
+
+
+
+        <div class="bottomfoot" style="clear:both">
+            <p class="bottomfoot">All rights reserved to the owner of the brand, Joaquin dela Cueva, Cyd Narrido, Ralph Alviar, Earl John Daniel and the creator of the website Lorenz Jiro L. Madrid.</p>
+        </div>
+    </footer>
+
+    <br />
+    <br />
+</body>
+
+</html>
